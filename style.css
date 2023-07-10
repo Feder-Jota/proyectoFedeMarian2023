@@ -12,6 +12,7 @@ header {
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 header img {
@@ -20,6 +21,20 @@ header img {
   height: 8rem;
   width: 15rem;
 }
+
+h1{
+  font-family: 'Raleway', sans-serif;
+  font-size: 7rem;
+}
+
+
+
+ header nav ul button {
+  background-color: transparent ;
+  color:  #fff;
+  font-size: 2rem;
+  border:none
+} 
 
 h2 {
   padding: 3rem;
@@ -100,4 +115,12 @@ footer {
   background-color: #333;
   color: #fff;
   text-align: center;
+}
+
+.display1{
+  display:block
+}
+
+.display2{
+  display: none;
 }
