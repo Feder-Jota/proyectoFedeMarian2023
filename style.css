@@ -7,12 +7,13 @@ nav {
 }
 
 header {
-  background-color: #333;
-  color: #fff;
+  background-color: #ffff;
+  color: #333;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  box-shadow: 1px 1rem 1rem #335
 }
 
 header img {
@@ -27,14 +28,13 @@ h1{
   font-size: 7rem;
 }
 
-
-
  header nav ul button {
   background-color: transparent ;
-  color:  #fff;
+  color:  #333;
   font-size: 2rem;
   border:none
 } 
+
 
 h2 {
   padding: 3rem;
