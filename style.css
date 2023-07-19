@@ -7,65 +7,64 @@ nav {
 }
 
 header {
-  background-color:#ff7575b3 ;
-  color: #e2001782;
+  background-color: #ffff;
+  color: #333;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 1px 1rem 1rem #3D3D3D
+  box-shadow: 1px 1rem 1rem #335
 }
 
-header nav h1 img {
+header img {
   border-radius: 20rem;
-  border: #ffffff 4px solid;
+  border: #ccc 4px solid;
   height: 8rem;
   width: 15rem;
 }
 
- header nav ul button {
+h1{
   font-family: 'Raleway', sans-serif;
-  background-color: transparent;
-  color:#e20017;
-  font-size: 2rem;
-  border: 1rem;
-  padding: 1rem;
-  text-align: right;
+  font-size: 7rem;
 }
+
+ header nav ul button {
+  background-color: transparent ;
+  color:  #333;
+  font-size: 2rem;
+  border:none
+} 
+
 
 h2 {
   padding: 3rem;
   align-items: center;
   text-align: center;
-  font-size: 5rem;
+  font-size: 8rem;
   font-family: 'Raleway', sans-serif;
-  color:#e20017;
 }
 
 #infosomos {
   display: flex;
-  padding: 4rem;
+  padding: 5rem;
   align-items: center;
-  margin:10px auto;
-	display:block;
 }
 
 #infosomos p {
   padding-right: 5rem;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  line-height: 1cm;
-  color:#e20017;
+  line-height: 1cm
 }
 
 #infosomos img{
   height: 40rem;
+ 
 }
 
 
 /* Estilos generales */
 body {
-  background-color:#ffffff;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -89,7 +88,7 @@ nav li {
 }
 
 nav a {
-  color: #f10606;
+  color: #fff;
   text-decoration: none;
 }
 
@@ -102,7 +101,7 @@ nav a {
   display: inline-block;
   margin: 10px;
   padding: 10px;
-  border: 1px solid #e20017;
+  border: 1px solid #ccc;
   text-align: center;
 }
 
@@ -113,8 +112,8 @@ nav a {
 
 /* Estilos del pie de página */
 footer {
-  background-color: #e20017;
-  color: #ff8f8f;
+  background-color: #333;
+  color: #fff;
   text-align: center;
 }
 
