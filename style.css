@@ -23,18 +23,17 @@ header img {
   width: 15rem;
 }
 
-h1{
+h1 {
   font-family: 'Raleway', sans-serif;
   font-size: 7rem;
 }
 
- header nav ul button {
-  background-color: transparent ;
-  color:  #333;
+header nav ul button {
+  background-color: transparent;
+  color: #333;
   font-size: 2rem;
-  border:none
-} 
-
+  border: none
+}
 
 h2 {
   padding: 3rem;
@@ -57,10 +56,9 @@ h2 {
   line-height: 1cm
 }
 
-#infosomos img{
+#infosomos img {
   height: 40rem;
 }
-
 
 /* Estilos generales */
 body {
@@ -98,8 +96,11 @@ nav a {
   margin: 20px;
 }
 
-
-
+#productos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
 
 /* Estilos del pie de página */
 footer {
@@ -108,18 +109,18 @@ footer {
   text-align: center;
 }
 
-.display1{
-  display:block
+.display1 {
+  display: block
 }
 
-.display2{
+.display2 {
   display: none;
 }
 
 /* botones */
 
-
-#btnProducto,#btnInicio {
+#btnProducto,
+#btnInicio {
   padding: 0.6em 1em;
   border: 4px solid #fa725a;
   transition: ease-in-out 0.3s;
@@ -128,76 +129,40 @@ footer {
   font-weight: bolder;
   font-size: 2rem;
   border-radius: 50%;
- }
-
-#btnProducto{
-  margin-left: 1rem;
 }
- 
-#btnInicio{
+
+#btnProducto {
   margin-left: 1rem;
 }
 
-#btnProducto:hover,#btnInicio:hover {
+#btnInicio {
+  margin-left: 1rem;
+}
+
+#btnProducto:hover,
+#btnInicio:hover {
   transform: scale(1.2) rotate(10deg);
   background-color: #fa725a;
   color: white;
- }
+}
 
 /* cartas */
 
-.card {
-  width: 300px;
-  height: 200px;
-  perspective: 1000px;
-  margin: 10rem;
+.tamañoDeCartas {
+  width: 20rem;
+  height: 40rem;
+  margin-top: 3rem;
+  margin-right: 2rem;
 }
 
-.card-inner {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  transform-style: preserve-3d;
-  transition: transform 0.999s;
+.fondoCard1 {
+  background-color: #de7c04;
+  border: #3d3d3d 2px solid;
+  box-shadow: 1rem 1rem;
+  padding-bottom: 2rem;
 }
 
-.card:hover .card-inner {
-  transform: rotateY(180deg);
-}
-
-.card-front,
-.card-back {
-  /* ---------------------------------------position:absolute; ESTE JODE */
-  width: 100%;
-  height: 100%;
-  backface-visibility: hidden;
-}
-
-.card-front {
-  background-color: #6A2C70;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  border: 10px solid #6A2C70;
-  border-radius: 10px;
-  justify-content: center;
-  font-size: 24px;
-  transform: rotateY(0deg);
-}
-
-.card-back {
-  background-color: #F08A5D;
-  color: #fff;
-  display: flex;
-  align-items: center;
-  border: 10px solid #F08A5D;
-  border-radius: 10px;
-  justify-content: center;
-  font-size: 24px;
-  transform: rotateY(180deg);
-}
-
-img{
-  width: 10rem;
-  height: 10rem;
+img {
+  height: 20rem;
+  object-fit: contain;
 }
