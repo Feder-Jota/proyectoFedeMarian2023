@@ -94,6 +94,7 @@ nav a {
 .product-list {
   width: 100%;
   margin: 20px;
+  
 }
 
 #productos {
@@ -108,7 +109,6 @@ footer {
   color: #fff;
   text-align: center;
 }
-
 
 .display1 {
   display: block
@@ -150,20 +150,27 @@ footer {
 /* cartas */
 
 .tamañoDeCartas {
-  width: 20rem;
-  height: 40rem;
+  width: 15rem;
+  height: 20rem;
   margin-top: 3rem;
   margin-right: 2rem;
 }
 
+.tamañoDeCartas .divImagen img{
+  object-fit: contain;
+  width: 12rem;
+  height: 18rem;
+}
+
 .fondoCard1 {
-  background-color: #de7c04;
+  
   border: #3d3d3d 2px solid;
   box-shadow: 1rem 1rem;
   padding-bottom: 2rem;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
 }
-
-
 
 
 .Btn {
@@ -266,3 +273,8 @@ footer {
   display: flex;
   flex-direction: row;
 }
+
+.card:hover{
+  box-shadow: 1px 1rem 1rem #fa725a
+}
+
