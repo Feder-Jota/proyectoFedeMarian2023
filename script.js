@@ -3,17 +3,23 @@ let btnProducto = document.getElementById("btnProducto")
 let quienesSomos = document.getElementById("quienes-somos")
 let listaDeProductos = document.getElementById("productos")
 let belleza = document.getElementById("belleza")
+let cocina = document.getElementById("cocina")
+let climatizacion = document.getElementById("climatizacion")
+let tecnologia = document.getElementById("tecnologia")
+let hogar = document.getElementById("hogar")
+let bicicleta = document.getElementById("bicicleta")
+let todo = document.getElementById("todo")
 
 
 
 
 let productos = [
-  { nombre: "Balanza", categoria: "belleza", precio: 1000, stock: false, imagen: "./productos/balanza.webp" },
+  { nombre: "Balanza", categoria: "belleza", precio: 1000, stock: true, imagen: "./productos/balanza.webp" },
   { nombre: "Plancha de pelo", categoria: "belleza", precio: 3000, stock: true, imagen: "./productos/barraSonido.webp" },
   { nombre: "Bicicleta 1", categoria: "bicicleta", precio: 50000, stock: true, imagen: "./productos/bici1.webp" },
-  { nombre: "Bicileta 2", categoria: "bicicleta", precio: 100000, stock: true, imagen: "./productos/bici2.webp" },
+  { nombre: "Bicicleta 2", categoria: "bicicleta", precio: 100000, stock: true, imagen: "./productos/bici2.webp" },
   { nombre: "No se que es", categoria: "belleza", precio: 10000, stock: true, imagen: "./productos/cosoRaro.webp" },
-  { nombre: "Desconosco", categoria: "belleza", precio: 10000, stock: false, imagen: "./productos/desconosco.webp" },
+  { nombre: "Desconosco", categoria: "hogar", precio: 10000, stock: true, imagen: "./productos/desconosco.webp" },
   { nombre: "Exprimidora", categoria: "cocina", precio: 1000, stock: true, imagen: "./productos/exprimidora.webp" },
   { nombre: "Cortadora de pelo", categoria: "belleza", precio: 10000, stock: true, imagen: "./productos/maquinaPelo.webp" },
   { nombre: "Mini", categoria: "cocina", precio: 10000, stock: true, imagen: "./productos/mini.webp" },
@@ -26,30 +32,29 @@ let productos = [
   { nombre: "Plancha ropa 2", categoria: "hogar", precio: 10000, stock: true, imagen: "./productos/planchaRopa2.webp" },
   { nombre: "Stereo auto", precio: 10000, stock: true, imagen: "./productos/stereo.webp" },
   { nombre: "Cafetero", categoria: "cocina", precio: 10000, stock: true, imagen: "./productos/trituradora.webp" },
-  { nombre: "Ventilador", categoria: "climitazacion", precio: 10000, stock: true, imagen: "./productos/ventilador.webp" },
+  { nombre: "Ventilador", categoria: "climatizacion", precio: 10000, stock: true, imagen: "./productos/ventilador.webp" },
 ]
 
 // ver esto mas
 
-let probandoArray = productos.filter((producto) => (producto.categoria == "belleza"))
 
 
-belleza.addEventListener("click", probando)
 
-function probando(){
-  {
+
+function filtrosDeProductos(par1){
+  
     mostrar("display2", "display1")
     listaDeProductos.innerHTML = ""
-    for (let index = 0; index < probandoArray.length; index++) {
+    for (let index = 0; index < par1.length; index++) {
       if (productos[index].stock == true) {
         listaDeProductos.innerHTML +=
           `
         <div class="card fondoCard1 tamañoDeCartas">
           <div class="divImagen">
-            <img class="card-img-top" src="${probandoArray[index].imagen}" alt="${probandoArray[index].nombre}">
+            <img class="card-img-top" src="${par1[index].imagen}" alt="${par1[index].nombre}">
           </div>
           <div class="divTexto">
-            <h5 class="card-title tamaño">${probandoArray[index].nombre} $${probandoArray[index].precio}</h5>
+            <h5 class="card-title tamaño">${par1[index].nombre} $${par1[index].precio}</h5>
           </div>
           
         </div>
@@ -58,7 +63,20 @@ function probando(){
       }
     }
   }
-}
+let productosBelleza = productos.filter((producto) => (producto.categoria == "belleza"))
+let productosBicicleta = productos.filter((producto) => (producto.categoria == "bicicleta"))
+let productosCocina = productos.filter((producto) => (producto.categoria == "cocina"))
+let productosHogar = productos.filter((producto) => (producto.categoria == "hogar"))
+let productosTecnologia = productos.filter((producto) => (producto.categoria == "tecnologia"))
+let productosClimatizacion = productos.filter((producto) => (producto.categoria == "climatizacion"))
+
+
+
+// bicicleta.addEventListener("click", filtrosDeProductos(productosBicicleta))
+
+// cocina.addEventListener("click", filtrosDeProductos(productosCocina))
+
+
 
 
 
@@ -72,10 +90,12 @@ function mostrar(display1, display2) {
   listaDeProductos.classList.add(`${display2}`)
   listaDeProductos.classList.remove(`${display1}`)
 }
+
 function seVeQuienesSomos() {
   listaDeProductos.innerHTML = ""
   mostrar("display1", "display2")
 }
+
 function seVeProductos() {
   mostrar("display2", "display1")
   listaDeProductos.innerHTML = ""
@@ -101,4 +121,12 @@ function seVeProductos() {
 
 btnInicio.addEventListener("click", seVeQuienesSomos)
 btnProducto.addEventListener("click", seVeProductos)
+belleza.onclick = () => { filtrosDeProductos(productosBelleza) }
+bicicleta.onclick = () => { filtrosDeProductos(productosBicicleta) }
+hogar.onclick = () => { filtrosDeProductos(productosHogar) }
+cocina.onclick = () => { filtrosDeProductos(productosCocina) }
+tecnologia.onclick = () => { filtrosDeProductos(productosTecnologia) }
+climatizacion.onclick = () => { filtrosDeProductos(productosClimatizacion) }
+
+todo.addEventListener("click", seVeProductos)
 
