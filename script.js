@@ -35,6 +35,8 @@ let productos = [
   { nombre: "Ventilador", categoria: "climatizacion", precio: 10000, stock: true, imagen: "./productos/ventilador.webp" },
 ]
 
+
+
 // ver esto mas
 
 
@@ -49,7 +51,7 @@ function filtrosDeProductos(par1){
       if (productos[index].stock == true) {
         listaDeProductos.innerHTML +=
           `
-        <div class="card fondoCard1 tamañoDeCartas">
+        <div class=" fondoCard1 tamañoDeCartas">
           <div class="divImagen">
             <img class="card-img-top" src="${par1[index].imagen}" alt="${par1[index].nombre}">
           </div>
