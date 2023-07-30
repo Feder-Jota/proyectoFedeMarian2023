@@ -120,6 +120,9 @@ footer {
   display: none;
 }
 
+.displayFlex{
+  display: flex;
+}
 
 
 /* cartas */
@@ -296,10 +299,9 @@ section{
 
 .botoneraFiltros{
   width: 15%;
-  display: flex;
   flex-direction: column;
- 
 }
+
 
 .botoneraFiltros button {
   margin: 1rem;

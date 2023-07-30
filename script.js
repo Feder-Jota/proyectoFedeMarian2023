@@ -9,7 +9,7 @@ let tecnologia = document.getElementById("tecnologia")
 let hogar = document.getElementById("hogar")
 let bicicleta = document.getElementById("bicicleta")
 let todo = document.getElementById("todo")
-
+let botoneraFiltros = document.getElementById("botoneraFiltros")
 
 
 
@@ -45,7 +45,8 @@ let productos = [
 
 function filtrosDeProductos(par1){
   
-    mostrar("display2", "display1")
+    mostrarQuienesSomos("display2", "display1")
+    todoProductos("display1","display2")
     listaDeProductos.innerHTML = ""
     for (let index = 0; index < par1.length; index++) {
       if (productos[index].stock == true) {
@@ -84,22 +85,27 @@ let productosClimatizacion = productos.filter((producto) => (producto.categoria 
 
 
 
-
-
-function mostrar(display1, display2) {
-  quienesSomos.classList.add(`${display1}`)
-  quienesSomos.classList.remove(`${display2}`)
+function todoProductos(display1,display2){
+  botoneraFiltros.classList.remove(`${display2}`)
+  botoneraFiltros.classList.add(`${display1}`)
   listaDeProductos.classList.add(`${display2}`)
   listaDeProductos.classList.remove(`${display1}`)
 }
 
+function mostrarQuienesSomos(display1, display2) {
+  quienesSomos.classList.add(`${display1}`)
+  quienesSomos.classList.remove(`${display2}`)
+}
+
 function seVeQuienesSomos() {
   listaDeProductos.innerHTML = ""
-  mostrar("display1", "display2")
+  mostrarQuienesSomos("display1", "display2")
+    todoProductos("display2","display1")
 }
 
 function seVeProductos() {
-  mostrar("display2", "display1")
+  mostrarQuienesSomos("display2", "display1")
+  todoProductos("display1","display2")
   listaDeProductos.innerHTML = ""
   for (let index = 0; index < productos.length; index++) {
     if (productos[index].stock == true) {
