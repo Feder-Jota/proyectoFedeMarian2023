@@ -13,6 +13,7 @@ header {
   align-items: center;
   box-shadow: 1px 1rem 1rem #335;
   padding: 1rem;
+  background-color: #C2C0BE;
 }
 
 header img {
@@ -58,30 +59,44 @@ nav ul {
 #btnProducto:hover,
 #btnInicio:hover {
   transform: scale(1.2) rotate(10deg);
-  background-color:#fff;
-  color: red;
+  background-color:#C2C0BE;
+  color: red
 }
 
 
 
-
+#quienes-somos div{
+display: flex;
+flex-direction: row-reverse;  
+padding: 5rem;
+}
 
 
 #infosomos {
   display: flex;
-  padding: 5rem;
-  align-items: center;
+  flex-direction: column;
+ padding-right: 5rem;
+ justify-content: center;
+}
+
+article h1, article h2{
+  font-family: 'Raleway', sans-serif;
+  font-style: italic;
+  font-weight: 900;
+  font-size:5rem;
+  margin-bottom: 2.3rem;
+  box-shadow: 0px 2px 0rem red
 }
 
 #infosomos p {
   padding-right: 5rem;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  line-height: 1cm
+  line-height: 1cm;
 }
 
 #infosomos img {
-  height: 40rem;
+  height: 100%;
 }
 
 /* Estilos generales */
@@ -90,12 +105,6 @@ body {
   margin: 0;
   background: darkgray;
   
-}
-
-/* Estilos del encabezado */
-
-header h1 {
-  margin: 0;
 }
 
 
