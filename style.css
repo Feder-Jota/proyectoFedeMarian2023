@@ -7,21 +7,25 @@ nav {
 }
 
 header {
+  background: linear-gradient(45deg, #f0e333 0%, #50e63c 25%, #27dca6 50%, #2397cc 75%, #2818bc 100%);
   color: #333;
+  padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  box-shadow: 1px 1rem 1rem #335;
-  padding: 1rem;
-  background-color: #C2C0BE;
+  box-shadow: 1px 1rem 1rem #335
 }
 
 header img {
-  border-radius: 50rem;
-  border: #3d3d3d 4px solid;
+  border-radius: 20rem;
+  border: #d916b2 4px solid;
   height: 8rem;
   width: 15rem;
-  margin-left: 2rem;
+}
+
+h1 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 7rem;
 }
 
 header nav ul button {
@@ -31,81 +35,61 @@ header nav ul button {
   border: none
 }
 
-nav ul {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
+h2 {
+  padding: 3rem;
+  align-items: center;
+  text-align: center;
+  font-size: 8rem;
+  font-family: 'Raleway', sans-serif;
 }
-
-/* botones nav*/
-#btnProducto,
-#btnInicio {
-  padding: 0.6em 1em;
-  border: 4px solid red;
-  transition: ease-in-out 0.3s;
-  background-color: transparent;
-  font-weight: bolder;
-  font-size: 2rem;
-  border-radius: 50%;
-}
-
-
-#btnProducto
-{
-  margin-right: 2rem;
-  margin-left: 1rem;
-}
-
-#btnProducto:hover,
-#btnInicio:hover {
-  transform: scale(1.2) rotate(10deg);
-  background-color:#C2C0BE;
-  color: red
-}
-
-
-
-#quienes-somos div{
-display: flex;
-flex-direction: row-reverse;  
-padding: 5rem;
-}
-
 
 #infosomos {
   display: flex;
-  flex-direction: column;
- padding-right: 5rem;
- justify-content: center;
-}
-
-article h1, article h2{
-  font-family: 'Raleway', sans-serif;
-  font-style: italic;
-  font-weight: 900;
-  font-size:5rem;
-  margin-bottom: 2.3rem;
-  box-shadow: 0px 2px 0rem red
+  padding: 5rem;
+  align-items: center;
 }
 
 #infosomos p {
   padding-right: 5rem;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
-  line-height: 1cm;
+  line-height: 1cm
 }
 
 #infosomos img {
-  height: 100%;
+  height: 40rem;
 }
 
 /* Estilos generales */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
-  background: darkgray;
-  
+  padding: 1rem;
+  background: linear-gradient(45deg, #f0e3334a 0%, #3ce67a4c 25%, #27cddc4f 50%, #3f23cc2f 75%, #bc18a354 100%);
 }
+
+/* Estilos del encabezado */
+
+header h1 {
+  margin: 0;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 10px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
 
 
 /* Estilos del pie de página */
@@ -129,16 +113,39 @@ footer {
   display: none;
 }
 
-.displayFlex{
-  display: flex;
+/* botones */
+#btnLogo,
+#btnProducto,
+#btnInicio {
+  padding: 0.6em 1em;
+  border: 4px solid #fa725a;
+  transition: ease-in-out 0.3s;
+  background-color: transparent;
+  color: #fa725a;
+  font-weight: bolder;
+  font-size: 2rem;
+  border-radius: 50%;
 }
 
+#btnLogo,
+#btnProducto,
+#btnInicio {
+  margin-left: 1rem;
+}
+
+#btnLogo:hover,
+#btnProducto:hover,
+#btnInicio:hover {
+  transform: scale(1.2) rotate(10deg);
+  background-color: #fa725a;
+  color: white;
+}
 
 /* cartas */
 
 .tamañoDeCartas {
-  width: 15rem;
-  height: 22rem;
+  max-width: 15rem;
+  max-height: 20rem;
   margin-top: 3rem;
   margin-right: 2rem;
 }
@@ -288,6 +295,7 @@ section div button {
   padding: 1em 2em;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+  background: linear-gradient(45deg, #f03333 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   border: 1px solid black;
   box-shadow: 0 0 0 0 black;
 }
@@ -308,12 +316,14 @@ section{
 
 .botoneraFiltros{
   width: 15%;
+  display: flex;
   flex-direction: column;
+  background: linear-gradient(45deg, #f03333 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
 }
-
 
 .botoneraFiltros button {
   margin: 1rem;
+  background: linear-gradient(45deg, #d4f033 0%, #45e63c 25%, #27dcca 50%, #3f23cc 75%, #bc18a9 100%);
 }
 
 .sectionFiltros{
@@ -321,6 +331,5 @@ section{
   padding-top:2rem;
   padding-right: 1rem;  
   padding-left: 10rem;
-  padding-bottom: 8rem;
    
 }

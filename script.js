@@ -9,7 +9,7 @@ let tecnologia = document.getElementById("tecnologia")
 let hogar = document.getElementById("hogar")
 let bicicleta = document.getElementById("bicicleta")
 let todo = document.getElementById("todo")
-let botoneraFiltros = document.getElementById("botoneraFiltros")
+
 
 
 
@@ -35,8 +35,6 @@ let productos = [
   { nombre: "Ventilador", categoria: "climatizacion", precio: 10000, stock: true, imagen: "./productos/ventilador.webp" },
 ]
 
-
-
 // ver esto mas
 
 
@@ -45,14 +43,13 @@ let productos = [
 
 function filtrosDeProductos(par1){
   
-    mostrarQuienesSomos("display2", "display1")
-    todoProductos("display1","display2")
+    mostrar("display2", "display1")
     listaDeProductos.innerHTML = ""
     for (let index = 0; index < par1.length; index++) {
       if (productos[index].stock == true) {
         listaDeProductos.innerHTML +=
           `
-        <div class=" fondoCard1 tamañoDeCartas">
+        <div class="card fondoCard1 tamañoDeCartas">
           <div class="divImagen">
             <img class="card-img-top" src="${par1[index].imagen}" alt="${par1[index].nombre}">
           </div>
@@ -85,27 +82,22 @@ let productosClimatizacion = productos.filter((producto) => (producto.categoria 
 
 
 
-function todoProductos(display1,display2){
-  botoneraFiltros.classList.remove(`${display2}`)
-  botoneraFiltros.classList.add(`${display1}`)
+
+
+function mostrar(display1, display2) {
+  quienesSomos.classList.add(`${display1}`)
+  quienesSomos.classList.remove(`${display2}`)
   listaDeProductos.classList.add(`${display2}`)
   listaDeProductos.classList.remove(`${display1}`)
 }
 
-function mostrarQuienesSomos(display1, display2) {
-  quienesSomos.classList.add(`${display1}`)
-  quienesSomos.classList.remove(`${display2}`)
-}
-
 function seVeQuienesSomos() {
   listaDeProductos.innerHTML = ""
-  mostrarQuienesSomos("display1", "display2")
-    todoProductos("display2","display1")
+  mostrar("display1", "display2")
 }
 
 function seVeProductos() {
-  mostrarQuienesSomos("display2", "display1")
-  todoProductos("display1","display2")
+  mostrar("display2", "display1")
   listaDeProductos.innerHTML = ""
   for (let index = 0; index < productos.length; index++) {
     if (productos[index].stock == true) {
