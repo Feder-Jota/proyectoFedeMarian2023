@@ -25,7 +25,7 @@ let productos = [
   { nombre: "Mini", categoria: "cocina", precio: 10000, stock: true, imagen: "./productos/mini.webp" },
   { nombre: "mouseGamer", categoria: "tecnologia", precio: 10000, stock: true, imagen: "./productos/mouseGamer.webp" },
   { nombre: "Parlante 1", categoria: "tecnologia", precio: 1000, stock: true, imagen: "./productos/parlante.webp" },
-  { nombre: "Parlante grande", categoria: "tecnologia", precio: 10000, stock: true, imagen: "./productos/parlanteGrande.png" },
+  { nombre: "Parlante grande", categoria: "tecnologia", precio: 10000, stock: true, imagen: "./productos/parlanteGrande.webp" },
   { nombre: "Plancha de pelo negra", categoria: "belleza", precio: 10000, stock: true, imagen: "./productos/planchaPeloNegra.webp" },
   { nombre: "Parlante de pelo rosa", categoria: "belleza", precio: 10000, stock: true, imagen: "./productos/planchaPeloRosa.webp" },
   { nombre: "Plancha ropa 1", categoria: "hogar", precio: 10000, stock: true, imagen: "./productos/planchaRopa.webp" },
