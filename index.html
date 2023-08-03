@@ -18,7 +18,9 @@
 
 <body>
   <header>
-    <img id="btnLogo" src="./logotipos/repsanlogo.png" alt="">
+
+    <img src="./logotipos/repsanlogo.png" alt="">
+
     <nav>
       <ul>
         <button id="btnInicio">Inicio</button>
@@ -37,18 +39,16 @@
           aria-label="Slide 2"></button>
         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
           aria-label="Slide 3"></button>
-        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3"
-          aria-label="Slide 4"></button>
       </div>
       <div class="carousel-inner">
-        <div class="carousel-item active">
+        <div class="carousel-item active" data-bs-interval="1500">
           <img src="./carusel/Almacenes.jpg" class="d-block w-100" alt="Manos sosteniendo un caloventor atma">
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="1500">
           <img src="./carusel/E3-1024x576.jpg" class="d-block w-100"
             alt="varios electrodomesticos en fila sobre una mesada">
         </div>
-        <div class="carousel-item">
+        <div class="carousel-item" data-bs-interval="1500">
           <img src="./carusel/Feviser1.jpg" class="d-block w-100" alt="Manos sosteniendo una batidora de mano">
         </div>
       </div>
@@ -66,39 +66,61 @@
 
 
     <section id="quienes-somos">
-      <article id="infosomos">
-        <p>Los integrantes de <strong>Repsan</strong> tuvieron la oportunidad de desarrollar su propio negocio gracias a
-          vos, con cada producto que comprás, pueden seguir siendo parte de la economía activa.
-          En una primera instancia, las y los reparadores fueron parte de un programa de formación de más de 400 horas
-          de duración, dictado por la empresa <strong>Newsan</strong>, donde adquirieron las habilidades necesarias para
-          reparar electrodomésticos y desarrollar su propio negocio.
-          Luego de ello, <strong>Newsan</strong> invirtió en equipamiento técnico, espacios físicos y asesoría técnica y
-          legal, para que cada reparador y reparadora pueda conformar su propia Unidad Productiva.
-          Las Unidades Productivas son centros de reparación conformados por personas de todo tipo y clase</p>
-        <img src="./logotipos/repsansomos.jpg" alt="repsan">
+      <article class="displayFlex">
+        <div id="infosomos">
+          <h1>Nosotros</h1>
+          <p>Los integrantes de <strong>Repsan</strong> tuvieron la oportunidad de desarrollar su propio negocio gracias
+            a
+            vos, con cada producto que comprás, pueden seguir siendo parte de la economía activa.
+            En una primera instancia, las y los reparadores fueron parte de un programa de formación de más de 400 horas
+            de duración, dictado por la empresa <strong>Newsan</strong>, donde adquirieron las habilidades necesarias
+            para
+            reparar electrodomésticos y desarrollar su propio negocio.
+            Luego de ello, <strong>Newsan</strong> invirtió en equipamiento técnico, espacios físicos y asesoría técnica
+            y
+            legal, para que cada reparador y reparadora pueda conformar su propia Unidad Productiva.
+            Las Unidades Productivas son centros de reparación conformados por personas de todo tipo y clase</p>
+        </div>
+        <img class="imgRepsan" src="./logotipos/repsansomos.jpg" alt="repsan">
       </article>
 
-      <iframe width="100%" height="600" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
-        src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=guido%20y%20spano%201681,%20victoria,%20provincia%20de%20buenos%20aires+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
-    </section>
 
-    
-    <section class="sectionFiltros" >
+      <article class="displayFlex">
+        <div id="infosomos">
+          <h1>Ubicación</h1>
+          <p>Te invitamos cordialmente a visitarnos en <strong>Repsan</strong>.
+            Nuestro dedicado equipo estará encantado de recibirte y brindarte el mejor servicio posible. <br>
+            Nos encontramos estratégicamente ubicados en <strong>Guido Spano 1681, Victoria</strong>, un lugar vibrante
+            y lleno de energía en Argentina.</p>
+        </div>
+        <div class="iframe">
+          <iframe width="100%" height="100%" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"
+            src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=es&amp;q=guido%20y%20spano%201681,%20victoria,%20provincia%20de%20buenos%20aires+(Mi%20nombre%20de%20egocios)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe>
+        </div>
+      </article>
+
+
+
+
+
+
+    </section>
+    <section class="sectionFiltros">
       <section id="botoneraFiltros" class="display2">
-      <div class="botoneraFiltros">
-        <h5>Filtro de productos:</h5>
-        <button id="belleza">Belleza</button>
-        <button id="bicicleta">Bicicletas</button>
-        <button id="climatizacion">Climatización</button>
-        <button id="cocina">Cocina</button>
-        <button id="hogar">Hogar</button>
-        <button id="tecnologia">Tecnologia</button>
-        <button id="todo">Todo</button>
-      </div>
+        <div class="botoneraFiltros">
+          <h5>Filtro de productos:</h5>
+          <button id="belleza">Belleza</button>
+          <button id="bicicleta">Bicicletas</button>
+          <button id="climatizacion">Climatización</button>
+          <button id="cocina">Cocina</button>
+          <button id="hogar">Hogar</button>
+          <button id="tecnologia">Tecnologia</button>
+          <button id="todo">Todo</button>
+        </div>
       </section>
       <div class="product-list" id="productos"></div>
     </section>
- 
+
   </main>
 
   <footer>

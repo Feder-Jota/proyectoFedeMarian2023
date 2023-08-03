@@ -7,7 +7,7 @@ nav {
 }
 
 header {
-  background: linear-gradient(45deg, #F9FBE7 25%, #F0EDD4 50%, #ECCDB4 75%, #FEA1A1 100%);
+  background: silver;
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
@@ -31,18 +31,22 @@ header nav ul button {
   border: none
 }
 
-h2 {
-  padding: 3rem;
-  align-items: center;
-  text-align: center;
-  font-size: 8rem;
+#infosomos h1 {
+  box-shadow: 0px 2px 0rem darkred;
+  font-size: 6rem;
   font-family: 'Raleway', sans-serif;
+  margin-bottom: 3rem;
 }
 
 #infosomos {
   display: flex;
+  flex-direction: column;
   padding: 5rem;
-  align-items: center;
+  align-items: left
+}
+
+section article{
+  padding: 4rem;
 }
 
 #infosomos p {
@@ -52,8 +56,14 @@ h2 {
   line-height: 1cm
 }
 
-#infosomos img {
+.imgRepsan {
   height: 40rem;
+  width: 40rem;
+
+}
+.iframe{
+  height: 40rem;
+  width: 55rem;
 }
 
 /* Estilos generales */
@@ -100,6 +110,10 @@ footer {
 }
 
 
+.displayFlex{
+  display: flex;
+}
+
 .display1 {
   display: block
 }
@@ -109,7 +123,6 @@ footer {
 }
 
 /* botones */
-#btnLogo,
 #btnProducto,
 #btnInicio {
   padding: 0.6em 1em;
@@ -122,13 +135,11 @@ footer {
   border-radius: 50%;
 }
 
-#btnLogo,
 #btnProducto,
 #btnInicio {
   margin-left: 1rem;
 }
 
-#btnLogo:hover,
 #btnProducto:hover,
 #btnInicio:hover {
   transform: scale(1.2) rotate(10deg);
@@ -140,7 +151,9 @@ footer {
 
 .tamañoDeCartas {
   max-width: 15rem;
-  max-height: 20rem;
+  max-height: 22rem;
+  width: 15rem;
+  height: 22rem;
   margin-top: 3rem;
   margin-right: 2rem;
 }
@@ -342,12 +355,12 @@ section {
 }
 
 #carouselExampleIndicators {
+  object-fit:fill;
   padding-top: 2rem;
   padding-bottom: 5rem
 }
 
 div div img {
-  object-fit: cover;
-  width: 100%;
-  height: 50rem;
+
+  height: 22rem;
 }
