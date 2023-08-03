@@ -11,7 +11,7 @@ header {
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
-  box-shadow: 1px 1rem 1rem #fa725a;
+  box-shadow: 1px 1rem 1rem #3d3d3d;
 }
 
 header img {
@@ -59,8 +59,6 @@ h2 {
 /* Estilos generales */
 body {
   font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 1rem;
   background: linear-gradient(45deg, #F9FBE7 25%, #F0EDD4 50%, #ECCDB4 75%, #FEA1A1 100%);
 }
 
@@ -93,10 +91,9 @@ footer {
   background-color: #333;
   color: #fa725a;
   text-align: center;
-  padding: 10px;
-  margin: 10px;
   font-size: 2rem;
-  background: linear-gradient(45deg, #F9FBE7 25%, #F0EDD4 50%, #ECCDB4 75%, #FEA1A1 100%);;
+  background: linear-gradient(45deg, #F9FBE7 25%, #F0EDD4 50%, #ECCDB4 75%, #FEA1A1 100%);
+  ;
   position: relative;
   justify-content: space-between;
   box-shadow: 1px 1rem 1rem #fa725a;
@@ -148,14 +145,14 @@ footer {
   margin-right: 2rem;
 }
 
-.tamañoDeCartas .divImagen img{
+.tamañoDeCartas .divImagen img {
   object-fit: contain;
   width: 12rem;
   height: 18rem;
 }
 
 .fondoCard1 {
-  
+
   border: #3d3d3d 2px solid;
   box-shadow: 1rem 1rem;
   padding-bottom: 2rem;
@@ -245,28 +242,31 @@ footer {
   transition-duration: .4s;
   cursor: pointer;
   position: relative;
-  background: rgba(255,255,255,1);
-  background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(14,249,33,1) 95%);
+  background: rgba(255, 255, 255, 1);
+  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(14, 249, 33, 1) 95%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(255,255,255,1)', endColorstr='rgba(14,249,33,1) ', GradientType=1);
   overflow: hidden;
 }
+
 .BtnWsp:hover .text {
   opacity: 1;
   transition-duration: .4s;
   color: #333;
 }
+
 .BtnWsp:hover {
   color: #333;
   width: 110px;
   transition-duration: .4s;
   border-radius: 30px;
 }
-.redesSociales{
+
+.redesSociales {
   display: flex;
   flex-direction: row;
 }
 
-.card:hover{
+.card:hover {
   box-shadow: 1px 1rem 1rem #fa725a
 }
 
@@ -275,7 +275,7 @@ footer {
 .product-list {
   width: 100%;
   padding-left: 6rem;
-  
+
 }
 
 #productos {
@@ -301,32 +301,53 @@ section div button {
 section div button:hover {
   transform: translateY(-4px) translateX(-2px);
   box-shadow: 2px 5px 0 0 black;
-};
+}
+
+
 
 section div button:active {
   transform: translateY(2px) translateX(1px);
   box-shadow: 1px 1rem 1rem fa725a;
-};
+}
 
-section{
+
+
+section {
   width: 100%;
 }
 
-.botoneraFiltros{
+#botoneraFiltros{
   width: 15%;
-  display: flex;
-  flex-direction: column;
-  background: #0e0e0e50;
 }
 
-.botoneraFiltros button {
+.botoneraFiltros {
+  width: 100%;
+  flex-direction: column;
+  background: #0e0e0e50;
+  display: flex;
+}
+
+
+
+.botoneraFiltros  button {
   margin: 1rem;
   background: #ECCDB4
 }
 
-.sectionFiltros{
+.sectionFiltros {
   display: flex;
-  padding-top:2rem;
-  padding-right: 1rem;  
+  padding-top: 2rem;
+  padding-right: 1rem;
   padding-left: 10rem;
+}
+
+#carouselExampleIndicators {
+  padding-top: 2rem;
+  padding-bottom: 5rem
+}
+
+div div img {
+  object-fit: cover;
+  width: 100%;
+  height: 50rem;
 }

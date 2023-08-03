@@ -9,7 +9,7 @@ let tecnologia = document.getElementById("tecnologia")
 let hogar = document.getElementById("hogar")
 let bicicleta = document.getElementById("bicicleta")
 let todo = document.getElementById("todo")
-
+let botoneraFiltros = document.getElementById("botoneraFiltros")
 
 
 
@@ -72,15 +72,15 @@ let productosClimatizacion = productos.filter((producto) => (producto.categoria 
 
 
 
-// bicicleta.addEventListener("click", filtrosDeProductos(productosBicicleta))
-
-// cocina.addEventListener("click", filtrosDeProductos(productosCocina))
 
 
 
 
 
-
+function mostrarBotonera(display1, display2) {
+botoneraFiltros.classList.add(`${display1}`)
+ botoneraFiltros.classList.remove(`${display2}`)  
+ }
 
 
 
@@ -89,14 +89,17 @@ function mostrar(display1, display2) {
   quienesSomos.classList.remove(`${display2}`)
   listaDeProductos.classList.add(`${display2}`)
   listaDeProductos.classList.remove(`${display1}`)
+
 }
 
 function seVeQuienesSomos() {
   listaDeProductos.innerHTML = ""
   mostrar("display1", "display2")
+  mostrarBotonera("display2","display1")
 }
 
 function seVeProductos() {
+  mostrarBotonera("display1","display2")
   mostrar("display2", "display1")
   listaDeProductos.innerHTML = ""
   for (let index = 0; index < productos.length; index++) {
