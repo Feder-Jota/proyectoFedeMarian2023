@@ -98,15 +98,15 @@ nav a {
 
 /* Estilos del pie de página */
 footer {
-  background-color: #333;
+  background-color: #3d3d3d50;
   color: #fa725a;
   text-align: center;
-  font-size: 2rem;
-  background: linear-gradient(45deg, #F9FBE7 25%, #F0EDD4 50%, #ECCDB4 75%, #FEA1A1 100%);
-  ;
+  /* font-size: 2rem; */
+  /* background: linear-gradient(45deg, #F9FBE7 25%, #F0EDD4 50%, #ECCDB4 75%, #FEA1A1 100%); */
   position: relative;
   justify-content: space-between;
   box-shadow: 1px 1rem 1rem #fa725a;
+  margin-top: 5%;
 }
 
 
