@@ -24,6 +24,15 @@ h1 {
   font-size: 7rem;
 }
 
+#botoneraFiltros h5 {
+  font-family: 'Raleway', sans-serif;
+  font-size: 2.5rem;
+  align-items: center;
+  justify-items: center;
+  text-align: center;
+  color: WHITE;
+}
+
 header nav ul button {
   background-color: transparent;
   color: #333;
@@ -62,6 +71,7 @@ section article{
   width: 40rem;
 
 }
+
 .iframe{
   height: 40rem;
   width: 55rem;
@@ -72,6 +82,8 @@ body {
   font-family: Arial, sans-serif;
   background-image: url(./fondo/dle-dibujados-m.avif);
   background-repeat: repeat;
+  padding: 0;
+  margin: 0
   /* background-attachment: fixed; */
 }
 
@@ -106,10 +118,7 @@ footer {
   text-align: center;
   /* font-size: 2rem; */
   /* background: linear-gradient(45deg, #F9FBE7 25%, #F0EDD4 50%, #ECCDB4 75%, #FEA1A1 100%); */
-  position: relative;
-  justify-content: space-between;
-  box-shadow: 1px 1rem 1rem #e20017;
-  margin-top: 5%;
+  box-shadow: 1px -1rem 1rem red;
 }
 
 
@@ -129,8 +138,8 @@ footer {
 #btnProducto,
 #btnInicio {
   padding: 0.6em 1em;
-  color: #e20017;
-  border: 4px solid #e20017;
+  color: red;
+  border: 4px solid red;
   transition: ease-in-out 0.3s;
   background-color: transparent;
   font-weight: bolder;
@@ -146,8 +155,8 @@ footer {
 #btnProducto:hover,
 #btnInicio:hover {
   transform: scale(1.2) rotate(10deg);
-  background-color: #e20017;
-  color: white;
+  background-color: red;
+  color: #333
 }
 
 /* cartas */
@@ -247,6 +256,23 @@ footer {
   transition-duration: .3s;
 }
 
+.redesSociales {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  align-items: center;
+}
+
+.redesSociales h5{
+  font-size: 2rem;
+  font-family: 'Raleway', sans-serif;
+}
+
+.redesSociales a {
+  padding: 1rem;
+}
+
+
 .BtnWsp {
   border: none;
   border-radius: 50%;
@@ -259,7 +285,7 @@ footer {
   cursor: pointer;
   position: relative;
   background: rgba(255, 255, 255, 1);
-  background: linear-gradient(90deg, rgba(255, 255, 255, 1) 0%, rgba(14, 249, 33, 1) 95%);
+  background: linear-gradient(90deg, rgba(250, 250, 250, 1) 0%, rgba(14, 249, 33, 1) 95%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(255,255,255,1)', endColorstr='rgba(14,249,33,1) ', GradientType=1);
   overflow: hidden;
 }
@@ -277,14 +303,13 @@ footer {
   border-radius: 30px;
 }
 
-.redesSociales {
-  display: flex;
-  flex-direction: row;
-}
-
 .card:hover {
   box-shadow: 1px 1rem 1rem #e20017
 }
+
+
+
+
 
 /* botonera productos */
 /* Estilos de la lista de productos */
@@ -351,6 +376,7 @@ section {
   padding-right: 1rem;
   padding-left: 10rem;
   background-color: #cacaca;
+ padding-bottom: 5rem;
 }
 
 #carouselExampleIndicators {
