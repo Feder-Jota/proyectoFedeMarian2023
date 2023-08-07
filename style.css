@@ -7,11 +7,11 @@ nav {
 }
 
 header {
-  background: silver;
+  background: rgb(255, 255, 255);
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
-  box-shadow: 1px 1rem 1rem #3d3d3d;
+  box-shadow: 1px 1rem 1rem #e20017;
 }
 
 header img {
@@ -47,6 +47,7 @@ header nav ul button {
 
 section article{
   padding: 4rem;
+  background-color: #cacaca;
 }
 
 #infosomos p {
@@ -69,7 +70,9 @@ section article{
 /* Estilos generales */
 body {
   font-family: Arial, sans-serif;
-  background: linear-gradient(45deg, #F9FBE7 25%, #F0EDD4 50%, #ECCDB4 75%, #FEA1A1 100%);
+  background-image: url(./fondo/dle-dibujados-m.avif);
+  background-repeat: repeat;
+  /* background-attachment: fixed; */
 }
 
 /* Estilos del encabezado */
@@ -98,14 +101,14 @@ nav a {
 
 /* Estilos del pie de página */
 footer {
-  background-color: #3d3d3d50;
-  color: #fa725a;
+  background-color:#ffffff;
+  color:#e20017 ;
   text-align: center;
   /* font-size: 2rem; */
   /* background: linear-gradient(45deg, #F9FBE7 25%, #F0EDD4 50%, #ECCDB4 75%, #FEA1A1 100%); */
   position: relative;
   justify-content: space-between;
-  box-shadow: 1px 1rem 1rem #fa725a;
+  box-shadow: 1px 1rem 1rem #e20017;
   margin-top: 5%;
 }
 
@@ -126,10 +129,10 @@ footer {
 #btnProducto,
 #btnInicio {
   padding: 0.6em 1em;
-  border: 4px solid #fa725a;
+  color: #e20017;
+  border: 4px solid #e20017;
   transition: ease-in-out 0.3s;
   background-color: transparent;
-  color: #fa725a;
   font-weight: bolder;
   font-size: 2rem;
   border-radius: 50%;
@@ -143,7 +146,7 @@ footer {
 #btnProducto:hover,
 #btnInicio:hover {
   transform: scale(1.2) rotate(10deg);
-  background-color: #fa725a;
+  background-color: #e20017;
   color: white;
 }
 
@@ -166,7 +169,7 @@ footer {
 
 .fondoCard1 {
 
-  border: #3d3d3d 2px solid;
+  border: #e20017 2px solid;
   box-shadow: 1rem 1rem;
   padding-bottom: 2rem;
   display: flex;
@@ -174,7 +177,7 @@ footer {
   flex-direction: column;
 }
 
-
+/* boton insta + wp*/
 .Btn {
   border: none;
   border-radius: 50%;
@@ -197,7 +200,7 @@ footer {
 }
 
 .svgIcon path {
-  fill: white;
+  fill: rgb(255, 255, 255);
 }
 
 .text {
@@ -280,7 +283,7 @@ footer {
 }
 
 .card:hover {
-  box-shadow: 1px 1rem 1rem #fa725a
+  box-shadow: 1px 1rem 1rem #e20017
 }
 
 /* botonera productos */
@@ -288,7 +291,6 @@ footer {
 .product-list {
   width: 100%;
   padding-left: 6rem;
-
 }
 
 #productos {
@@ -298,15 +300,14 @@ footer {
 }
 
 section div button {
-  background-color: white;
-  color: black;
+  background-color: #cacaca;
+  color: #e20017;
   border-radius: 10em;
   font-size: 17px;
   font-weight: 600;
   padding: 1em 2em;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
-  background: linear-gradient(45deg, #f03333 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%);
   border: 1px solid black;
   box-shadow: 0 0 0 0 black;
 }
@@ -317,12 +318,10 @@ section div button:hover {
 }
 
 
-
 section div button:active {
   transform: translateY(2px) translateX(1px);
   box-shadow: 1px 1rem 1rem fa725a;
 }
-
 
 
 section {
@@ -336,15 +335,14 @@ section {
 .botoneraFiltros {
   width: 100%;
   flex-direction: column;
-  background: #0e0e0e50;
+  background: #e20017;
   display: flex;
 }
 
 
-
 .botoneraFiltros  button {
   margin: 1rem;
-  background: #ECCDB4
+  background: #ffffff
 }
 
 .sectionFiltros {
@@ -352,6 +350,7 @@ section {
   padding-top: 2rem;
   padding-right: 1rem;
   padding-left: 10rem;
+  background-color: #cacaca;
 }
 
 #carouselExampleIndicators {
