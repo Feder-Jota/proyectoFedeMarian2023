@@ -11,7 +11,7 @@ header {
   padding: 1rem 2rem;
   display: flex;
   justify-content: space-between;
-  box-shadow: 1px 1rem 1rem #e20017;
+  box-shadow: -1px -1px 1rem #e20017;
 }
 
 header img {
@@ -119,6 +119,7 @@ footer {
   /* font-size: 2rem; */
   /* background: linear-gradient(45deg, #F9FBE7 25%, #F0EDD4 50%, #ECCDB4 75%, #FEA1A1 100%); */
   box-shadow: 1px -1rem 1rem red;
+  margin-top: 5rem;
 }
 
 
@@ -163,9 +164,9 @@ footer {
 
 .tamañoDeCartas {
   max-width: 15rem;
-  max-height: 22rem;
+  max-height: 24rem;
   width: 15rem;
-  height: 22rem;
+  height: 24rem;
   margin-top: 3rem;
   margin-right: 2rem;
 }
@@ -179,7 +180,7 @@ footer {
 .fondoCard1 {
 
   border: #e20017 2px solid;
-  box-shadow: 1rem 1rem;
+  box-shadow: 1rem 1rem 1px black;
   padding-bottom: 2rem;
   display: flex;
   align-items: center;
@@ -304,7 +305,7 @@ footer {
 }
 
 .card:hover {
-  box-shadow: 1px 1rem 1rem #e20017
+  box-shadow: 1rem 1rem 1rem #e20017
 }
 
 
@@ -334,7 +335,6 @@ section div button {
   cursor: pointer;
   transition: all 0.3s ease-in-out;
   border: 1px solid black;
-  box-shadow: 0 0 0 0 black;
 }
 
 section div button:hover {
@@ -380,12 +380,11 @@ section {
 }
 
 #carouselExampleIndicators {
-  object-fit:fill;
-  padding-top: 2rem;
-  padding-bottom: 5rem
+  padding-top: 5px;
+  padding-bottom: 5px;
 }
 
 div div img {
 
-  height: 22rem;
+  height: 28rem;
 }
