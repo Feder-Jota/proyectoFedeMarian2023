@@ -79,7 +79,7 @@ section article {
 
 body {
   font-family: Arial, sans-serif;
-  background-image: url(/fondo/dle-dibujados-m.avif);
+  background-image: url(./fondo.avif);
   background-repeat: repeat;
   padding: 0;
   margin: 0
@@ -272,7 +272,7 @@ footer {
   cursor: pointer;
   position: relative;
   background: rgba(255, 255, 255, 1);
-  background: linear-gradient(90deg, rgba(250, 250, 250, 1) 0%, rgba(14, 249, 33, 1) 95%);
+  background: linear-gradient(90deg, rgba(5, 150, 10, 1) 0%, rgba(14, 249, 33, 1) 95%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='rgba(255,255,255,1)', endColorstr='rgba(14,249,33,1) ', GradientType=1);
   overflow: hidden;
 }

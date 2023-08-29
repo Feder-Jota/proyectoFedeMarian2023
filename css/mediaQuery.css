@@ -1,55 +1,63 @@
-@media(max-width: 1600px){
+@media(max-width: 1600px) {
     #infosomos h1 {
         font-size: 4rem;
-      }
+    }
+
     #infosomos p {
         font-size: 17px;
-      }
-    .imgRepsan{
+    }
+
+    .imgRepsan {
         height: 40rem;
         width: 40rem;
     }
 }
 
-@media(max-width: 1400px){
+@media(max-width: 1400px) {
     #infosomos h1 {
         font-size: 3rem;
-      }
+    }
+
     #infosomos p {
         font-size: 15px;
-      }
-    .imgRepsan{
+    }
+
+    .imgRepsan {
         height: 30rem;
         width: 30rem;
     }
-    #infosomos{
+
+    #infosomos {
         padding-right: 10px;
         padding-left: 0;
         padding-top: 0rem;
-        padding-bottom: 0rem; 
+        padding-bottom: 0rem;
     }
 }
 
-@media(max-width: 1050px){
+@media(max-width: 1050px) {
     div div img {
         vertical-align: top;
         max-height: 15rem
-      }
+    }
+
     section article {
         flex-direction: column;
     }
+
     .iframe {
-  height: 33rem;
-  width: 42rem;
-}
-      
+        height: 33rem;
+        width: 42rem;
+    }
+
 }
 
 @media(max-width: 750px) {
     div div img {
         vertical-align: top;
         max-height: 12rem
-      }
+    }
+
     header {
         display: flex;
         flex-direction: column;
@@ -59,19 +67,18 @@
 
     nav ul {
         display: flex;
-
         justify-content: right;
         align-items: right;
         align-content: right;
         justify-items: right;
     }
+
     .iframe {
-  height: 30rem;
-  width: 28rem;
-}
+        height: 30rem;
+        width: 28rem;
+    }
 
     nav ul button {
-
         margin-top: 0.3rem;
     }
 
@@ -82,7 +89,8 @@
     div div img {
         vertical-align: top;
         max-height: 10rem
-      }
+    }
+
     nav ul {
         display: flex;
         flex-direction: column;
@@ -90,10 +98,10 @@
         align-items: center;
         align-content: center;
         justify-items: center;
-
     }
+
     .iframe {
-  height: 30rem;
-  width: 25rem;
-}
+        height: 30rem;
+        width: 25rem;
+    }
 }
