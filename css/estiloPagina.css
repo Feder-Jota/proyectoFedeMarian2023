@@ -19,9 +19,11 @@ header img {
   width: 15rem;
 }
 
-h1 {
-  font-family: 'Raleway', sans-serif;
-  font-size: 7rem;
+header nav ul button {
+  background-color: transparent;
+  color: #333;
+  font-size: 2rem;
+  border: none
 }
 
 #botoneraFiltros h5 {
@@ -33,16 +35,14 @@ h1 {
   color: WHITE;
 }
 
-header nav ul button {
-  background-color: transparent;
-  color: #333;
-  font-size: 2rem;
-  border: none
+#quienes-somos article {
+  align-items: center;
+  justify-content: center;
 }
 
 #infosomos h1 {
   box-shadow: 0px 2px 0rem darkred;
-  font-size: 6rem;
+  font-size: 5rem;
   font-family: 'Raleway', sans-serif;
   margin-bottom: 3rem;
 }
@@ -60,16 +60,14 @@ section article {
 }
 
 #infosomos p {
-  padding-right: 5rem;
+  padding-right: 4rem;
   font-family: 'Roboto', sans-serif;
   font-size: 20px;
   line-height: 1cm
 }
 
 .imgRepsan {
-  height: 40rem;
-  width: 40rem;
-
+  object-fit: contain
 }
 
 .iframe {
@@ -88,10 +86,6 @@ body {
 }
 
 /* Estilos del encabezado */
-
-header h1 {
-  margin: 0;
-}
 
 nav ul {
   list-style-type: none;
