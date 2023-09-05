@@ -174,7 +174,19 @@ footer {
   align-items: center;
   flex-direction: column;
 }
+.divTexto{
+  font-family: 'Roboto', sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
 
+/* divTexto p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 200px;
+} */
 /* boton insta + wp*/
 .Btn {
   border: none;

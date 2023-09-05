@@ -35,6 +35,24 @@
     }
 }
 
+@media(max-width: 1265px) {
+    .tamañoDeCartas {
+        max-width: 10rem;
+        max-height: 18rem;
+        width: 10rem;
+        height: 18rem;
+    }
+
+    .tamañoDeCartas .divImagen img {
+        object-fit: contain;
+        width: 8rem;
+        height: 14rem;
+    }
+    .divTexto{
+        font-size: 15px;
+      }
+}
+
 @media(max-width: 1050px) {
     div div img {
         vertical-align: top;
@@ -50,6 +68,32 @@
         width: 42rem;
     }
 
+}
+
+@media(max-width: 983px) {
+    .tamañoDeCartas {
+        max-width: 8rem;
+        max-height: 12rem;
+        width: 8rem;
+        height: 12rem;
+    }
+
+    .tamañoDeCartas .divImagen img {
+        object-fit: contain;
+        width: 6.5rem;
+        height: 8rem;
+    }
+
+    .divTexto h5 {
+        font-size: medium;
+    }
+
+    .sectionFiltros {
+        padding-top: 1rem;
+        padding-right: 0.5rem;
+        padding-left: 2rem;
+        padding-bottom: 3rem;
+    }
 }
 
 @media(max-width: 750px) {
@@ -82,7 +126,18 @@
         margin-top: 0.3rem;
     }
 
-    ;
+    .tamañoDeCartas {
+        max-width: 8rem;
+        max-height: 10rem;
+        width: 8rem;
+        height: 10rem;
+    }
+
+    .tamañoDeCartas .divImagen img {
+        object-fit: contain;
+        width: 6.5rem;
+        height: 7rem;
+    }
 }
 
 @media(max-width: 480px) {
